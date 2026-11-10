@@ -12,7 +12,6 @@ AlthermaHub = altherma_hub_ns.class_(
     "AlthermaHub",
     cg.PollingComponent,
     uart.UARTDevice,
-    api.CustomAPIDevice,
 )
 
 CONFIG_SCHEMA = (
