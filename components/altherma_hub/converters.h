@@ -307,13 +307,13 @@ public:
         {
             sprintf(def->asString, "%g", dblData);
         }
-        Serial.printf("-> %s\n", def->asString);
+        fakeSerial.printf("-> %s\n", def->asString);
     }
 
 private:
     void convertTable300(unsigned char *data, int tableID, char *ret)
     {
-        Serial.printf("Bin Conv %02x with tableID %d \n", data[0], tableID);
+        fakeSerial.printf("Bin Conv %02x with tableID %d \n", data[0], tableID);
         char b = 1;
         b = (char)(b << tableID % 10);
         if ((data[0] & b) > 0)
