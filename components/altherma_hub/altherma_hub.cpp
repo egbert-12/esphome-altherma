@@ -145,6 +145,7 @@ void AlthermaHub::queue_manual_query(std::string registry_id, int32_t offset, in
   }
 
   this->manual_register_ = static_cast<uint8_t>(value);
+        ESP_LOGW(TAG, "Manual register opgeslagen: 0x%02X", this->manual_register_);
   this->manual_offset_ = offset;
   this->manual_convid_ = convid;
   this->manual_datasize_ = datasize;
