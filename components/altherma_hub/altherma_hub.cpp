@@ -22,7 +22,7 @@ LabelDef labelDefs[] = {};
       ESP_LOGV(CONV_TAG, fmt, args...);
     }
   };
-  static FakeSerial Serial;
+  static FakeSerial fakeSerial;
 
 //}
 #endif
