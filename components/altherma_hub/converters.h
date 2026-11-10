@@ -71,7 +71,7 @@ public:
         int convId = def->convid;
         int num = def->dataSize;
         double dblData = NAN;
-        Serial.print("Converting from:");
+        fakeSerial.print("Converting from:");
         for (int i = 0; i < num; i++)
         {
             Serial.printf(" 0x%02x ", data[i]);
