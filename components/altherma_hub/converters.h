@@ -74,7 +74,7 @@ public:
         fakeSerial.print("Converting from:");
         for (int i = 0; i < num; i++)
         {
-            Serial.printf(" 0x%02x ", data[i]);
+            fakeSerial.printf(" 0x%02x ", data[i]);
         }
 
         switch (convId)
